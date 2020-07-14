@@ -1,0 +1,23 @@
+{
+  "name": "second_proj",
+  "version": "1.0.0",
+  "description": "aws",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js --no-deprecation",
+    "test": "mocha test.js --recursive --timeout 15000 --no-deprecation --exit"
+  },
+  "author": "akshat shrivastava",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mocha": "^8.0.1",
+    "mongoose": "^5.9.24",
+    "chai": "^4.2.0"
+  }
+}
