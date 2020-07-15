@@ -14,7 +14,7 @@ deply:
   access_key_id: AKIAWYAF6JQBTOBXBHMN
   secret_access_key: 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
   region: "us-east-1"
-  app: "second_project" 
+  app: "second-project" 
   env: "SecondProject-env"
   bucket_name: "second-project-s3-bucket-2304"
   on:
