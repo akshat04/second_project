@@ -1,0 +1,21 @@
+sudo: required
+
+services:
+  -docker
+
+before_install:
+  - docker build -f dockerfile.dev -t akshat04/second_project .
+
+script:
+  - docker run akshat04/second_project
+
+deply:
+  provider: elasticbeanstalk
+  access_key_id: AKIAWYAF6JQBTOBXBHMN
+  secret_access_key: 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
+  region: "us-east-1"
+  app: "second_project" 
+  env: "second_project"
+  bucket_name: "second-project-s3-bucket-2304"
+  on:
+    branch: master
